@@ -1,8 +1,49 @@
 import React from "react";
-import Image from "next/image";
+import { useState, useEffect } from "react";
 import { AiFillSchedule } from "react-icons/ai";
 
 const NavbarTop = () => {
+  const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [text, setText] = useState("");
+  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const period = 2000;
+  const toRotate = [
+    "Craftsmanship + Style Guidance + Expert Eye Care",
+    "Care + Eye Health Partner + Innovative Eye Solutions ",
+  ];
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => {
+      clearInterval(ticker);
+    }; // eslint-disable-next-line
+  }, [text]);
+
+  const tick = () => {
+    let i = loopNum % toRotate.length;
+    let fullText = toRotate[i];
+    let updatedText = isDeleting
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
+
+    setText(updatedText);
+    if (isDeleting) {
+      setDelta((prevDelta) => prevDelta / 2);
+    }
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setDelta(period);
+    } else if (isDeleting && updatedText === "") {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setDelta(500);
+    }
+  };
+
   return (
     <header className="text-black body-font border-b-2 border-y-blue-950">
       <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
@@ -18,7 +59,7 @@ const NavbarTop = () => {
           <div className="font-style flex flex-col text-center">
             <div className="font-bold text-xl text-blue-900">Niche </div>
             <div className="font-thin">
-              Vision Craftsmanship + Style Guidance + Expert Eye Care
+              Vision <span>{text}</span>{" "}
             </div>
           </div>
         </nav>
