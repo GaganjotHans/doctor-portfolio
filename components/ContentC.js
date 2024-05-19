@@ -42,7 +42,7 @@ const ContentC = () => {
   };
   return (
     <section
-      className="content__section__img"
+      className="content__section__img mb-16"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <Row className="w-full my-36 relative -top-48">

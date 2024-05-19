@@ -7,15 +7,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-button {
+/* 
+.btn {
   background: linear-gradient(
     90.21deg,
     rgba(18, 8, 93, 0.5) -5.91%,
-    rgba(46, 113, 238, 0.5) 111.58%
+    rgba(50, 92, 171, 0.5) 111.58%
   );
   border: 1px solid rgba(0, 0, 0, 0.5);
-}
+} */
 
 .font-style {
   font-family: sans-serif;
@@ -60,4 +60,126 @@ button {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+/* Services CSS */
+
+.proj-imgbx {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  /* margin-bottom: 24px; */
+}
+.proj-imgbx::before {
+  content: "";
+  background: linear-gradient(90.21deg, #1e141a -5.91%, #434344 111.58%);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+.proj-imgbx:hover::before {
+  height: 100%;
+}
+.proj-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+.proj-imgbx:hover .proj-txtx {
+  top: 50%;
+  opacity: 1;
+}
+
+.proj-txtx h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+  color: white;
+}
+.proj-txtx span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+  color: white;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+/* .slider {
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+}
+
+.slider p {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+}
+ */
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.items {
+  display: flex;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -4px 6px rgba(0, 0, 0, 0.1),
+    4px 0 6px rgba(0, 0, 0, 0.1), -4px 0 6px rgba(0, 0, 0, 0.1); /* Box shadow for all sides */
+  border-radius: 10px;
+}
+
+.item {
+  min-width: 100%;
+  transition: transform 0.5s ease, opacity 0.5s ease, z-index 0.5s ease;
+  text-align: center;
+  font-size: 24px;
+  opacity: 0;
+  position: absolute;
+}
+
+.item.active {
+  opacity: 1;
+}
+
+.btn-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
 }

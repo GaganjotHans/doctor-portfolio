@@ -63,7 +63,7 @@ const NavbarTop = () => {
             </div>
           </div>
         </nav>
-        <button className="inline-flex items-center bg-blue-900 text-white border-0 p-3 focus:outline-none hover:bg-blue-800 rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent hover:text-black">
+        <button className="inline-flex items-center bg-blue-900 text-white border-0 p-3 focus:outline-none  rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent hover:border-2 hover:border-blue-900 hover:text-blue-900">
           Book Appointment
           <AiFillSchedule className="ml-2 text-3xl" />
         </button>
