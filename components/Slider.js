@@ -15,6 +15,7 @@ const Slider = () => {
     }, 5000);
 
     return () => clearInterval(interval);
+    //eslint-disable-next-line
   }, [active]);
 
   const loadShow = () => {
@@ -87,7 +88,7 @@ const Slider = () => {
   ];
 
   return (
-    <section className="slider-section my-16  ">
+    <section className="slider-section my-12  ">
       <h1 className="text-4xl font-serif text-center my-5">
         Frequently Asked Questions
       </h1>
@@ -102,7 +103,7 @@ const Slider = () => {
         <button className="btn-arrow" id="prev" onClick={handlePrev}>
           <MdOutlineKeyboardArrowLeft className="text-2xl" />
         </button>
-        <div className="items h-72 my-24 mx-3">
+        <div className="items h-72 my-20 mx-3">
           {slides.map((slide, index) => (
             <div
               key={index}

@@ -26,7 +26,7 @@ const ContentA = () => {
                       Your vision is our priority.
                     </p>
                     <div className="flex items-center flex-wrap ">
-                      <button className="inline-flex items-center bg-blue-900 text-white border-0 p-3 focus:outline-none  rounded mt-2 md:mt-0 font-thin text-md hover:bg-transparent hover:border-2 hover:border-blue-900 hover:text-blue-900">
+                      <button className="inline-flex items-center bg-blue-900 text-white p-2 focus:outline-none  rounded mt-2 md:mt-0 font-thin text-md hover:bg-transparent border-2 border-blue-900 hover:text-blue-900">
                         Learn More
                         <svg
                           className="w-4 h-4 ml-2"
@@ -62,7 +62,7 @@ const ContentA = () => {
                       our professionalism and experience.
                     </p>
                     <div className="flex items-center flex-wrap">
-                      <button className="inline-flex items-center bg-blue-900 text-white border-0 p-3 focus:outline-none  rounded mt-2 md:mt-0 font-thin text-md hover:bg-transparent hover:border-2 hover:border-blue-900 hover:text-blue-900">
+                      <button className="inline-flex items-center bg-blue-900 text-white p-2 focus:outline-none  rounded mt-2 md:mt-0 font-thin text-md hover:bg-transparent border-2 border-blue-900 hover:text-blue-900">
                         Learn More
                         <svg
                           className="w-4 h-4 ml-2"
@@ -98,7 +98,7 @@ const ContentA = () => {
                       future of eye care with our cutting-edge practice.
                     </p>
                     <div className="flex items-center flex-wrap ">
-                      <button className="inline-flex items-center bg-blue-900 text-white border-0 p-3 focus:outline-none  rounded mt-2 md:mt-0 font-thin text-md hover:bg-transparent hover:border-2 hover:border-blue-900 hover:text-blue-900">
+                      <button className="inline-flex items-center bg-blue-900 text-white p-2 focus:outline-none  rounded mt-2 md:mt-0 font-thin text-md hover:bg-transparent border-2 border-blue-900 hover:text-blue-900">
                         Learn More
                         <svg
                           className="w-4 h-4 ml-2"

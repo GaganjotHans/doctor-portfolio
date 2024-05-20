@@ -17,7 +17,7 @@ const Banner = () => {
               appointment today and embark on a journey to clearer, healthier
               vision!
             </p>
-            <button className="inline-flex items-center bg-blue-900 text-white border-0 p-3 focus:outline-none  rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent hover:border-2 hover:border-blue-900 hover:text-blue-900 anim">
+            <button className="inline-flex items-center bg-blue-900 text-white p-2 focus:outline-none  rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent border-2 border-blue-900 hover:text-blue-900 anim">
               Learn Why People Trust Us
             </button>
           </Col>
