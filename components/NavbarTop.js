@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { useState, useEffect } from "react";
 import { AiFillSchedule } from "react-icons/ai";
@@ -47,14 +48,17 @@ const NavbarTop = () => {
   return (
     <header className="text-black body-font bg-white border-b-2 border-y-blue-950">
       <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
-        <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <Link
+          className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+          href="/"
+        >
           <img // eslint-disable-line
             src="/DrLogo.png"
             alt="Logo of the author's Name"
             width={250}
             height={150}
           />
-        </a>
+        </Link>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
           <div className="font-style flex flex-col text-center">
             <div className="font-bold text-xl text-blue-900">Niche </div>

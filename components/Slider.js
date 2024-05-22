@@ -88,7 +88,7 @@ const Slider = () => {
   ];
 
   return (
-    <section className="slider-section my-12  ">
+    <section className="slider-section my-12" id="faq">
       <h1 className="text-4xl font-serif text-center my-5">
         Frequently Asked Questions
       </h1>
