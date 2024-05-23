@@ -1,14 +1,14 @@
 import React from "react";
 import Footer from "../components/Footer";
 
-const philosophy = () => {
+const Philosophy = () => {
   return (
     <section className="text-gray-600 body-font overflow-hidden">
       <h1 className="text-4xl font-serif font-normal text-center mt-10">
         Our Philosophy
       </h1>
       <div className="container px-5 py-24 mx-auto">
-        <div className="-my-8 divide-y-2 divide-gray-100">
+        <div className="-my-8 divide-y-2 divide-gray-200">
           <div className="py-8 flex flex-wrap md:flex-nowrap">
             <div className="md:w-96 md:mb-0 mb-6 flex-shrink-0">
               <span className="text-3xl font-serif title-font text-black">
@@ -192,4 +192,4 @@ const philosophy = () => {
   );
 };
 
-export default philosophy;
+export default Philosophy;

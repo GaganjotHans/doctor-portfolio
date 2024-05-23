@@ -1,7 +1,7 @@
 import React from "react";
 import ContactForm from "../components/ContactForm";
 
-const exam = () => {
+const Exam = () => {
   return (
     <div>
       exam
@@ -10,4 +10,4 @@ const exam = () => {
   );
 };
 
-export default exam;
+export default Exam;

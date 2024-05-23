@@ -1,8 +1,10 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../components/Footer";
+import ReCAPTCHA from "react-google-recaptcha";
 
-const contact = () => {
+const Contact = () => {
+  const [captchaVal, setCaptchaVal] = useState("");
   return (
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto flex flex-wrap">
@@ -121,7 +123,7 @@ const contact = () => {
               id="label-message"
               className="leading-7 text-md text-gray-900 font-sans"
             >
-              Message
+              Ask a question or leave us a specific request
             </label>
             <textarea
               id="message"
@@ -133,7 +135,15 @@ const contact = () => {
           {/* <button className="text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">
             Button
           </button> */}
-          <button className="inline-flex items-center mr-auto bg-blue-900 text-white border-2 border-blue-900 p-2 focus:outline-none  rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent hover:text-blue-900">
+          <ReCAPTCHA
+            className="my-2"
+            sitekey="6Lf0Q-YpAAAAANFtyYKB1KWbKv1lZLaecMU_-J_a"
+            onChange={(val) => setCaptchaVal(val)}
+          />
+          <button
+            disabled={!captchaVal}
+            className="inline-flex items-center mr-auto bg-blue-900 text-white border-2 border-blue-900 p-2 focus:outline-none  rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent hover:text-blue-900"
+          >
             Submit Request
           </button>
         </div>
@@ -143,4 +153,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;

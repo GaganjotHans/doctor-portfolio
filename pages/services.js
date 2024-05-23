@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer";
 
-const services = () => {
+const Services = () => {
   return (
     <section className="text-gray-600 body-font mx-auto " id="services">
       <h1 className="text-3xl font-serif text-center my-10">SERVICES</h1>
@@ -1356,4 +1356,4 @@ const services = () => {
   );
 };
 
-export default services;
+export default Services;
