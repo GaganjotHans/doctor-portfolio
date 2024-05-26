@@ -2,13 +2,13 @@ import React from "react";
 import Footer from "../components/Footer";
 import Link from "next/link";
 
-const about = () => {
+const About = () => {
   return (
     <section className="text-gray-600 body-font" id="about">
-      <h1 className="text-4xl font-serif font-normal text-center my-10">
+      <h1 className=" container mx-auto title-font font-medium text-3xl py-5 text-black font-serif mt-10 text-start border-b-2 border-y-gray-300">
         ABOUT
       </h1>
-      <div className="container py-16 mx-auto">
+      <div className="container mx-auto  px-4 py-16 bg-gray-50">
         <div className="flex flex-wrap justify-center mb-10 items-center text-center h-fit">
           <div className="sm:w-1/2 px-4">
             <div className="rounded-lg h-fit overflow-hidden">
@@ -75,4 +75,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;
