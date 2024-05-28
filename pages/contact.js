@@ -17,7 +17,7 @@ const Contact = () => {
 
   const [captchaVal, setCaptchaVal] = useState("");
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState("SUBMIT FORM");
+  const [buttonText, setButtonText] = useState("SUBMIT");
   const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
@@ -45,7 +45,7 @@ const Contact = () => {
 
       let result = await response.json();
 
-      setButtonText("SUBMIT FORM");
+      setButtonText("SUBMIT");
       setFormDetails(formInitialDetails);
 
       if (result.status === "Message Sent") {
@@ -59,7 +59,7 @@ const Contact = () => {
       }
     } catch (error) {
       console.error("Error:", error.message);
-      setButtonText("SUBMIT FORM");
+      setButtonText("SUBMIT");
       setStatus({
         success: false,
         message: "Something went wrong, Please try again later",
@@ -78,14 +78,14 @@ const Contact = () => {
             If you have any questions or comments for us, please call us or use
             the form below to contact our team who will be happy to help. If you
             are interested in booking an eye test, you can call us or{" "}
-            <Link href={"/exam"} className="text-blue-800">
+            <Link href={"/exam#book-appointment"} className="text-blue-800">
               {" "}
               click here{" "}
             </Link>
             to use our appointment request form.
           </p>
         </div>
-        <div className="lg:w-2/5 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+        <div className="lg:w-2/5 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 font-style">
           <div className="relative mb-4">
             <label
               htmlFor="firstName"

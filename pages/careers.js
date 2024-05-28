@@ -64,13 +64,14 @@ const Careers = () => {
             learning and real-world application
           </div>
         </div>
-        <div className="lg:w-2/5 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+        <div className="lg:w-2/5 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 font-style">
           <div className="relative mb-4">
             <label
               htmlFor="firstName"
               className="leading-7 text-md text-gray-900 font-sans"
             >
               First Name
+              <span className="ml-1 text-blue-900 text-xl">*</span>
             </label>
             <input
               type="text"
@@ -87,6 +88,7 @@ const Careers = () => {
               className="leading-7 text-md text-gray-900 font-sans"
             >
               Last Name
+              <span className="ml-1 text-blue-900 text-xl">*</span>
             </label>
             <input
               type="text"
@@ -103,6 +105,7 @@ const Careers = () => {
               className="leading-7 text-md text-gray-900 font-sans"
             >
               Email
+              <span className="ml-1 text-blue-900 text-xl">*</span>
             </label>
             <input
               type="email"
@@ -117,6 +120,7 @@ const Careers = () => {
               className="leading-7 text-md text-gray-900 font-sans"
             >
               Phone
+              <span className="ml-1 text-blue-900 text-xl">*</span>
             </label>
             <input
               type="number"
@@ -131,6 +135,7 @@ const Careers = () => {
               className="leading-7 text-md text-gray-900 font-sans"
             >
               Link to your resume
+              <span className="ml-1 text-blue-900 text-xl">*</span>
             </label>
             <input
               type="text"

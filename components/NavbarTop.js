@@ -50,7 +50,7 @@ const NavbarTop = () => {
       <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
         <Link
           className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
-          href="/"
+          href={"/"}
         >
           <img // eslint-disable-line
             src="/DrLogo.png"
@@ -67,10 +67,12 @@ const NavbarTop = () => {
             </div>
           </div>
         </nav>
-        <button className="inline-flex items-center bg-blue-900 text-white border-2 border-blue-900 p-2 focus:outline-none  rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent hover:text-blue-900">
-          Book Appointment
-          <AiFillSchedule className="ml-2 text-3xl" />
-        </button>
+        <Link href={"/exam#book-appointment"}>
+          <button className="inline-flex items-center bg-blue-900 text-white border-2 border-blue-900 p-2 focus:outline-none  rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent hover:text-blue-900">
+            Book Appointment
+            <AiFillSchedule className="ml-2 text-3xl" />
+          </button>
+        </Link>
       </div>
     </header>
   );

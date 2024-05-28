@@ -6,13 +6,14 @@ const AppointmentForm = () => {
   return (
     <section className="text-gray-600 body-font relative">
       <div className="container py-16 mx-auto">
-        <div className="lg:w-3/5 md:w-full bg-gray-50 p-12 flex flex-col md:mr-auto w-full md:mt-0 border-2 ">
+        <div className="lg:w-3/5 md:w-full bg-gray-50 p-12 flex flex-col md:mr-auto w-full md:mt-0 border-2 font-style">
           <div className="relative mb-4">
             <label
               htmlFor="firstName"
               className="leading-7 text-md text-gray-900 font-sans"
             >
               First Name
+              <span className="ml-1 text-blue-900 text-xl">*</span>
             </label>
             <input
               type="text"
@@ -29,6 +30,7 @@ const AppointmentForm = () => {
               className="leading-7 text-md text-gray-900 font-sans"
             >
               Last Name
+              <span className="ml-1 text-blue-900 text-xl">*</span>
             </label>
             <input
               type="text"
@@ -45,6 +47,7 @@ const AppointmentForm = () => {
               className="leading-7 text-md text-gray-900 font-sans"
             >
               Email
+              <span className="ml-1 text-blue-900 text-xl">*</span>
             </label>
             <input
               type="email"
@@ -59,6 +62,7 @@ const AppointmentForm = () => {
               className="leading-7 text-md text-gray-900 font-sans"
             >
               Phone
+              <span className="ml-1 text-blue-900 text-xl">*</span>
             </label>
             <input
               type="number"
@@ -73,6 +77,7 @@ const AppointmentForm = () => {
               className="leading-7 text-md text-gray-900 font-sans"
             >
               Select Nearest Location
+              <span className="ml-1 text-blue-900 text-xl">*</span>
             </label>
             <select
               id="location"
@@ -92,6 +97,7 @@ const AppointmentForm = () => {
           <div className="relative mb-4">
             <label className="leading-7 text-md text-gray-900 font-sans">
               Patient Type
+              <span className="ml-1 text-blue-900 text-xl">*</span>
             </label>
             <div className="flex items-center mt-2">
               <input
@@ -151,6 +157,9 @@ const AppointmentForm = () => {
           >
             Submit Booking Request
           </button>
+          <p className="text-xs text-gray-500 mt-3">
+            We will be in touch with you soon.
+          </p>
         </div>
       </div>
     </section>

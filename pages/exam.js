@@ -60,9 +60,23 @@ const Exam = () => {
           />
         </div>
       </div>
-      <h1 className=" container mx-auto title-font font-medium text-3xl py-5 text-black font-serif mt-10 text-start border-b-2 border-y-gray-300">
+      <h1
+        className=" container mx-auto title-font font-medium text-3xl py-5 text-black font-serif mt-10 text-start border-b-2 border-y-gray-300"
+        id="book-appointment"
+      >
         BOOK YOUR EYE EXAM BELOW
       </h1>
+      <p className="container mx-auto my-5 font-style">
+        To request your eye exam, please take a moment to complete the short
+        form below with your personal details and your preferred location for
+        the appointment. This information will help us ensure that we provide
+        you with the best possible service. Once you have submitted the form,
+        our team will review your request and reach out to you shortly to
+        confirm and schedule your appointment. We are dedicated to making this
+        process as convenient and efficient as possible, so you can receive the
+        eye care you need without any hassle. Thank you for choosing us for your
+        eye care needs. We look forward to assisting you.
+      </p>
 
       <AppointmentForm />
       <Footer />
