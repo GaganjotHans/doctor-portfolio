@@ -1,8 +1,71 @@
 import React, { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const AppointmentForm = () => {
+  const formInitialDetails = {
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+    patientType: "new",
+    location: "location1",
+  };
+
   const [captchaVal, setCaptchaVal] = useState("");
+  const [formDetails, setFormDetails] = useState(formInitialDetails);
+  const [buttonText, setButtonText] = useState("SUBMIT");
+  const [status, setStatus] = useState({});
+
+  const onFormUpdate = (category, value) => {
+    setFormDetails({
+      ...formDetails,
+      [category]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setButtonText("SUBMITTING...");
+
+    try {
+      let response = await fetch(
+        `${process.env.NEXT_PUBLIC_HOST}/api/bookAppointment`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json;charset=utf-8",
+          },
+          body: JSON.stringify(formDetails),
+        }
+      );
+
+      let result = await response.json();
+
+      setButtonText("SUBMIT");
+      setFormDetails(formInitialDetails);
+
+      if (result.status === "Message Sent") {
+        setStatus({ success: true, message: "Message sent Successfully" });
+        toast.success("Message sent Successfully");
+      } else {
+        setStatus({
+          success: false,
+          message: "Something went wrong, Please try again later",
+        });
+      }
+    } catch (error) {
+      console.error("Error:", error.message);
+      setButtonText("SUBMIT");
+      setStatus({
+        success: false,
+        message: "Something went wrong, Please try again later",
+      });
+    }
+  };
+
   return (
     <section className="text-gray-600 body-font relative">
       <div className="container py-16 mx-auto">
@@ -22,6 +85,9 @@ const AppointmentForm = () => {
               className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-800 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               spellCheck="false"
               data-ms-editor="true"
+              value={formDetails.firstName}
+              onChange={(e) => onFormUpdate("firstName", e.target.value)}
+              required
             />
           </div>
           <div className="relative mb-4">
@@ -39,6 +105,9 @@ const AppointmentForm = () => {
               className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-800 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               spellCheck="false"
               data-ms-editor="true"
+              value={formDetails.lastName}
+              onChange={(e) => onFormUpdate("lastName", e.target.value)}
+              required
             />
           </div>
           <div className="relative mb-4">
@@ -54,6 +123,9 @@ const AppointmentForm = () => {
               id="email"
               name="email"
               className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-800 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              value={formDetails.email}
+              onChange={(e) => onFormUpdate("email", e.target.value)}
+              required
             />
           </div>
           <div className="relative mb-4">
@@ -69,6 +141,9 @@ const AppointmentForm = () => {
               id="phone"
               name="phone"
               className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-800 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              value={formDetails.phone}
+              onChange={(e) => onFormUpdate("phone", e.target.value)}
+              required
             />
           </div>
           <div className="relative mb-4">
@@ -83,8 +158,10 @@ const AppointmentForm = () => {
               id="location"
               name="location"
               className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-800 text-base outline-none text-gray-700 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              value={formDetails.location}
+              onChange={(e) => onFormUpdate("location", e.target.value)}
             >
-              <option value="location1">
+              <option value=" Hakim Optical (222 Glendale Ave, St. Catharines, ON L2T 2K5)">
                 Hakim Optical (222 Glendale Ave, St. Catharines, ON L2T 2K5)
               </option>
               <option value="location2">Location 2</option>
@@ -106,6 +183,8 @@ const AppointmentForm = () => {
                 name="patient-type"
                 value="new"
                 className="mr-2 "
+                checked={formDetails.patientType === "new"}
+                onChange={(e) => onFormUpdate("patientType", e.target.value)}
               />
               <label
                 htmlFor="new-patient"
@@ -119,6 +198,8 @@ const AppointmentForm = () => {
                 name="patient-type"
                 value="existing"
                 className="mr-2"
+                checked={formDetails.patientType === "existing"}
+                onChange={(e) => onFormUpdate("patientType", e.target.value)}
               />
               <label
                 htmlFor="existing-patient"
@@ -141,11 +222,10 @@ const AppointmentForm = () => {
               name="message"
               rows="4"
               className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-800 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              value={formDetails.message}
+              onChange={(e) => onFormUpdate("message", e.target.value)}
             ></textarea>
           </div>
-          {/* <button className="text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">
-            Button
-          </button> */}
           <ReCAPTCHA
             className="my-2"
             sitekey="6Lf0Q-YpAAAAANFtyYKB1KWbKv1lZLaecMU_-J_a"
@@ -153,13 +233,27 @@ const AppointmentForm = () => {
           />
           <button
             disabled={!captchaVal}
+            type="submit"
+            onClick={handleSubmit}
             className="inline-flex items-center mr-auto bg-blue-900 text-white border-2 border-blue-900 p-2 focus:outline-none  rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent hover:text-blue-900"
           >
-            Submit Booking Request
+            {buttonText}
           </button>
           <p className="text-xs text-gray-500 mt-3">
             We will be in touch with you soon.
           </p>
+          <ToastContainer
+            position="top-center"
+            autoClose={2000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+          />
         </div>
       </div>
     </section>
