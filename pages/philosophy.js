@@ -1,13 +1,14 @@
 import React from "react";
 import Footer from "../components/Footer";
+import Expectations from "../components/Expectations";
 
 const Philosophy = () => {
   return (
     <section className="text-gray-600 body-font overflow-hidden">
-      <h1 className="text-4xl font-serif font-normal text-center mt-10">
-        Our Philosophy
+      <h1 className=" container mx-auto title-font font-medium text-3xl py-5 text-black font-serif mt-10 text-start border-b-2 border-y-gray-300">
+        OUR PHILOSOPHY
       </h1>
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-10 py-24 mx-auto bg-gray-50">
         <div className="-my-8 divide-y-2 divide-gray-200">
           <div className="py-8 flex flex-wrap md:flex-nowrap">
             <div className="md:w-96 md:mb-0 mb-6 flex-shrink-0">
@@ -187,6 +188,7 @@ const Philosophy = () => {
           </div>
         </div>
       </div>
+      <Expectations />
       <Footer />
     </section>
   );

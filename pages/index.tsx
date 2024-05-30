@@ -8,6 +8,7 @@ import Services from "../components/Services";
 import Slider from "../components/Slider";
 import Footer from "../components/Footer";
 import Testimonial from "../components/Testimonial";
+import Expectations from "../components/Expectations";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function Home() {
         <ContentC />
         <Services />
         <Slider />
+        <Expectations />
         <Testimonial />
         <Footer />
       </div>

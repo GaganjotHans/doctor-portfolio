@@ -1,6 +1,7 @@
 import React from "react";
 import AppointmentForm from "../components/AppointmentForm";
 import Footer from "../components/Footer";
+import Expectations from "../components/Expectations";
 
 const Exam = () => {
   return (
@@ -79,6 +80,7 @@ const Exam = () => {
       </p>
 
       <AppointmentForm />
+      <Expectations />
       <Footer />
     </section>
   );

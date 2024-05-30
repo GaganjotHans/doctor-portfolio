@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
+import Expectations from "../components/Expectations";
 
 const Services = () => {
   return (
@@ -7,7 +8,7 @@ const Services = () => {
       <h1 className=" container mx-auto title-font font-medium text-3xl py-5 text-black font-serif mt-10 text-start border-b-2 border-y-gray-300">
         SERVICES
       </h1>
-      <div className="container mx-auto px-16 py-16 bg-gray-50">
+      <div className="container mx-auto px-16 py-16 mb-16 bg-gray-50">
         <div className="container mx-auto pb-24 flex flex-wrap" id="service-1">
           <h1 className="text-3xl my-4 font-serif">Adult Eye Exams</h1>
           <div className="flex flex-wrap w-full">
@@ -1359,6 +1360,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+      <Expectations />
       <Footer />
     </section>
   );

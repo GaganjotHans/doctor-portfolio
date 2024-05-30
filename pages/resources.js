@@ -1,6 +1,7 @@
 import React from "react";
 import ContentC from "../components/ContentC";
 import Footer from "../components/Footer";
+import Expectations from "../components/Expectations";
 
 const Resources = () => {
   return (
@@ -175,6 +176,7 @@ const Resources = () => {
           />
         </div>
       </div>
+      <Expectations />
       <Footer />
     </section>
   );

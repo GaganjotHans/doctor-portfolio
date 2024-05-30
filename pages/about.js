@@ -1,5 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer";
+import Expectations from "../components/Expectations";
+
 import Link from "next/link";
 
 const About = () => {
@@ -8,7 +10,7 @@ const About = () => {
       <h1 className=" container mx-auto title-font font-medium text-3xl py-5 text-black font-serif mt-10 text-start border-b-2 border-y-gray-300">
         ABOUT
       </h1>
-      <div className="container mx-auto  px-4 py-16 bg-gray-50">
+      <div className="container mx-auto px-4 py-16 mb-16 bg-gray-50">
         <div className="flex flex-wrap justify-center mb-10 items-center text-center h-fit">
           <div className="sm:w-1/2 px-4">
             <div className="rounded-lg h-fit overflow-hidden">
@@ -20,7 +22,7 @@ const About = () => {
             </div>
 
             <button className="inline-flex items-center bg-blue-900 text-white border-2 border-blue-900 py-2 px-5 focus:outline-none  rounded my-6 font-thin text-lg hover:bg-transparent hover:text-blue-900">
-              Meet The Doctor
+              MEET THE DOCTOR
             </button>
           </div>
           <div className="sm:w-1/2 px-4">
@@ -33,7 +35,7 @@ const About = () => {
             </div>
             <Link href={"/philosophy"}>
               <button className="inline-flex items-center bg-blue-900 text-white border-2 border-blue-900 py-2 px-5 focus:outline-none  rounded my-6 font-thin text-lg hover:bg-transparent hover:text-blue-900">
-                Our Philosophy
+                OUR PHILOSOPHY
               </button>
             </Link>
           </div>
@@ -50,7 +52,7 @@ const About = () => {
 
             <Link href={"/#testimonial"}>
               <button className="inline-flex items-center bg-blue-900 text-white border-2 border-blue-900 py-2 px-5 focus:outline-none  rounded my-6 font-thin text-lg hover:bg-transparent hover:text-blue-900">
-                Testimonials
+                TESTIMONIALS
               </button>
             </Link>
           </div>
@@ -64,12 +66,13 @@ const About = () => {
             </div>
             <Link href={"/#faq"}>
               <button className="inline-flex items-center bg-blue-900 text-white border-2 border-blue-900 py-2 px-5 focus:outline-none  rounded my-6 font-thin text-lg hover:bg-transparent hover:text-blue-900">
-                Frequently Asked Questions
+                FREQUENTLY ASKED QUESTIONS
               </button>
             </Link>
           </div>
         </div>
       </div>
+      <Expectations />
       <Footer />
     </section>
   );

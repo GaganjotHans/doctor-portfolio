@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import ReCAPTCHA from "react-google-recaptcha";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Expectations from "../components/Expectations";
 
 const Contact = () => {
   const formInitialDetails = {
@@ -252,6 +253,7 @@ const Contact = () => {
           )} */}
         </div>
       </div>
+      <Expectations />
       <Footer />
     </section>
   );
