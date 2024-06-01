@@ -116,9 +116,6 @@ const Expectations = () => {
             </div>
           </div>
         </div>
-        {/* <button className="flex mx-auto mt-16 text-white bg-blue-900 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-          Button
-        </button> */}
         <Link href={"/exam#book-appointment"}>
           <button className="flex mx-auto mt-16 items-center bg-blue-900 text-white border-2 border-blue-900 px-3 py-2 focus:outline-none rounded font-normal text-lg hover:bg-transparent hover:text-blue-900">
             Take The Next Step

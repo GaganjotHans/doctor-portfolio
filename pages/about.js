@@ -20,10 +20,11 @@ const About = () => {
                 src="/drImage.jpeg"
               />
             </div>
-
-            <button className="inline-flex items-center bg-blue-900 text-white border-2 border-blue-900 py-2 px-5 focus:outline-none  rounded my-6 font-thin text-lg hover:bg-transparent hover:text-blue-900">
-              MEET THE DOCTOR
-            </button>
+            <Link href={"/doctor"}>
+              <button className="inline-flex items-center bg-blue-900 text-white border-2 border-blue-900 py-2 px-5 focus:outline-none  rounded my-6 font-thin text-lg hover:bg-transparent hover:text-blue-900">
+                MEET THE DOCTOR
+              </button>
+            </Link>
           </div>
           <div className="sm:w-1/2 px-4">
             <div className="rounded-lg h-96 overflow-hidden">
