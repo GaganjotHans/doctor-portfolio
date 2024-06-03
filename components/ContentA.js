@@ -65,21 +65,23 @@ const ContentA = () => {
                       our professionalism and experience.
                     </p>
                     <div className="flex items-center flex-wrap">
-                      <button className="inline-flex items-center bg-blue-900 text-white p-2 focus:outline-none  rounded mt-2 md:mt-0 font-thin text-md hover:bg-transparent border-2 border-blue-900 hover:text-blue-900">
-                        Learn More
-                        <svg
-                          className="w-4 h-4 ml-2"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path d="M5 12h14"></path>
-                          <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                      </button>
+                      <Link href={"/doctor"}>
+                        <button className="inline-flex items-center bg-blue-900 text-white p-2 focus:outline-none  rounded mt-2 md:mt-0 font-thin text-md hover:bg-transparent border-2 border-blue-900 hover:text-blue-900">
+                          Learn More
+                          <svg
+                            className="w-4 h-4 ml-2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            fill="none"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5l7 7-7 7"></path>
+                          </svg>
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>

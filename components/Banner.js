@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
@@ -16,9 +17,11 @@ const Banner = () => {
             appointment today and embark on a journey to clearer, healthier
             vision!
           </p>
-          <button className="inline-flex items-center bg-blue-900 text-white p-2 focus:outline-none  rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent border-2 border-blue-900 hover:text-blue-900 anim">
-            Learn Why People Trust Us
-          </button>
+          <Link href={"/about"}>
+            <button className="inline-flex items-center bg-blue-900 text-white p-2 focus:outline-none  rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent border-2 border-blue-900 hover:text-blue-900 anim">
+              Learn Why People Trust Us
+            </button>
+          </Link>
         </div>
         <div className="w-full md:w-1/2">
           <img // eslint-disable-line

@@ -5,19 +5,22 @@ import Expectations from "../components/Expectations";
 const Services = () => {
   return (
     <section className="text-gray-600 body-font" id="services">
-      <h1 className=" container mx-auto title-font font-medium text-3xl py-5 text-black font-serif mt-10 text-start border-b-2 border-y-gray-300">
+      <h1 className="container mx-auto title-font font-medium text-3xl py-5 text-black font-serif mt-10 text-start border-b-2 border-y-gray-300 pl-4 lg:pl-0">
         SERVICES
       </h1>
-      <div className="container mx-auto px-16 py-16 mb-16 bg-gray-50">
-        <div className="container mx-auto pb-24 flex flex-wrap" id="service-1">
+      <div className="container mx-auto p-4 lg:p-16 mb-16 bg-gray-50">
+        <div
+          className="container mx-auto pb-2 lg:pb-24 flex flex-wrap"
+          id="service-1"
+        >
           <h1 className="text-3xl my-4 font-serif">Adult Eye Exams</h1>
-          <div className="flex flex-wrap w-full">
+          <div className="flex flex-col lg:flex-row flex-wrap w-full">
             <img // eslint-disable-line
-              className="lg:w-1/2 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+              className="lg:w-1/2 w-full h-96 xl:h-full object-cover object-center rounded-lg mt-0 lg:my-2"
               src="/service1.jpeg"
               alt="step"
             />
-            <div className="lg:w-1/2 md:w-1/2 md:pl-10 md:py-6">
+            <div className="lg:w-1/2 w-full pl-0 lg:pl-10 py-10 lg:py-2">
               <div className="flex relative pb-12">
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
@@ -161,10 +164,13 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="container pb-24 mx-auto flex flex-wrap" id="service-2">
+        <div
+          className="container pb-2 lg:pb-24 mx-auto flex flex-wrap"
+          id="service-2"
+        >
           <h1 className="text-3xl my-4 font-serif">Senior Eye Exams</h1>
-          <div className="flex flex-wrap w-full">
-            <div className="lg:w-1/2 md:w-1/2 md:pr-10 md:py-6">
+          <div className="flex flex-col-reverse lg:flex-row flex-wrap w-full">
+            <div className="lg:w-1/2 w-full pr-0 lg:pr-10 py-10 lg:py-2">
               <div className="flex relative pb-12">
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
@@ -303,21 +309,24 @@ const Services = () => {
               </div>
             </div>
             <img // eslint-disable-line
-              className="lg:w-1/2 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+              className="lg:w-1/2 w-full h-96 xl:h-full object-cover object-center rounded-lg mt-0 lg:my-2"
               src="/service2.jpeg"
               alt="step"
             />
           </div>
         </div>
-        <div className="container pb-24 mx-auto flex flex-wrap" id="service-3">
+        <div
+          className="container pb-12 lg:pb-24 mx-auto flex flex-wrap"
+          id="service-3"
+        >
           <h1 className="text-3xl my-4 font-serif">Children Eye Exams</h1>
-          <div className="flex flex-wrap w-full">
+          <div className="flex flex-col lg:flex-row flex-wrap w-full">
             <img // eslint-disable-line
-              className="lg:w-1/2 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+              className="lg:w-1/2 w-full h-96 xl:h-full object-cover object-center rounded-lg md:mt-0 my-6"
               src="/service3.jpeg"
               alt="step"
             />
-            <div className="lg:w-1/2 md:w-1/2 md:pl-10 md:py-6">
+            <div className="lg:w-1/2 w-full lg:pl-10 py-6">
               <div className="flex relative pb-12">
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
@@ -457,10 +466,13 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="container pb-24 mx-auto flex flex-wrap" id="service-4">
+        <div
+          className="container pb-12 lg:pb-24 mx-auto flex flex-wrap"
+          id="service-4"
+        >
           <h1 className="text-3xl my-4 font-serif">Diabetic Eye Exams</h1>
-          <div className="flex flex-wrap w-full">
-            <div className="lg:w-1/2 md:w-1/2 md:pr-10 md:py-6">
+          <div className="flex flex-col-reverse lg:flex-row flex-wrap w-full">
+            <div className="lg:w-1/2 w-full lg:pr-10 py-6">
               <div className="flex relative pb-12">
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
@@ -599,21 +611,24 @@ const Services = () => {
               </div>
             </div>
             <img // eslint-disable-line
-              className="lg:w-1/2 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+              className="lg:w-1/2 w-full h-96 xl:h-full object-cover object-center rounded-lg md:mt-0 my-6"
               src="/service4.jpeg"
               alt="step"
             />
           </div>
         </div>
-        <div className="container pb-24 mx-auto flex flex-wrap" id="service-5">
+        <div
+          className="container pb-12 lg:pb-24 mx-auto flex flex-wrap"
+          id="service-5"
+        >
           <h1 className="text-3xl my-4 font-serif">Contact Lens Fitting</h1>
-          <div className="flex flex-wrap w-full">
+          <div className="flex flex-col lg:flex-row flex-wrap w-full">
             <img // eslint-disable-line
-              className="lg:w-1/2 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+              className="lg:w-1/2 w-full h-96 xl:h-full object-cover object-center rounded-lg md:mt-0 my-6"
               src="/service5.jpeg"
               alt="step"
             />
-            <div className="lg:w-1/2 md:w-1/2 md:pl-10 md:py-6">
+            <div className="lg:w-1/2 w-full lg:pl-10 py-6">
               <div className="flex relative pb-12">
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
@@ -753,12 +768,15 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="container pb-24 mx-auto flex flex-wrap" id="service-6">
+        <div
+          className="container pb-12 lg:pb-24 mx-auto flex flex-wrap"
+          id="service-6"
+        >
           <h1 className="text-3xl my-4 font-serif">
             Speciality Contact Lens Fitting
           </h1>
-          <div className="flex flex-wrap w-full">
-            <div className="lg:w-1/2 md:w-1/2 md:pr-10 md:py-6">
+          <div className="flex flex-col-reverse lg:flex-row flex-wrap w-full">
+            <div className="lg:w-1/2 w-full lg:pr-10 py-6">
               <div className="flex relative pb-12">
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
@@ -900,21 +918,24 @@ const Services = () => {
               </div>
             </div>
             <img // eslint-disable-line
-              className="lg:w-1/2 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+              className="lg:w-1/2 w-full h-96 xl:h-full object-cover object-center rounded-lg md:mt-0 my-6"
               src="/service6.jpeg"
               alt="step"
             />
           </div>
         </div>
-        <div className="container pb-24 mx-auto flex flex-wrap" id="service-7">
+        <div
+          className="container pb-12 lg:pb-24 mx-auto flex flex-wrap"
+          id="service-7"
+        >
           <h1 className="text-3xl my-4 font-serif">Dry Eye Therapy</h1>
-          <div className="flex flex-wrap w-full">
+          <div className="flex flex-col lg:flex-row flex-wrap w-full">
             <img // eslint-disable-line
-              className="lg:w-1/2 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+              className="lg:w-1/2 w-full h-96 xl:h-full object-cover object-center rounded-lg md:mt-0 my-6"
               src="/service7.jpeg"
               alt="step"
             />
-            <div className="lg:w-1/2 md:w-1/2 md:pl-10 md:py-6">
+            <div className="lg:w-1/2 w-full lg:pl-10 py-6">
               <div className="flex relative pb-12">
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
@@ -1057,10 +1078,13 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="container pb-24 mx-auto flex flex-wrap" id="service-8">
+        <div
+          className="container pb-12 lg:pb-24 mx-auto flex flex-wrap"
+          id="service-8"
+        >
           <h1 className="text-3xl my-4 font-serif">Myopia Control</h1>
-          <div className="flex flex-wrap w-full">
-            <div className="lg:w-1/2 md:w-1/2 md:pr-10 md:py-6">
+          <div className="flex flex-col-reverse lg:flex-row flex-wrap w-full">
+            <div className="lg:w-1/2 w-full lg:pr-10 py-6">
               <div className="flex relative pb-12">
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
@@ -1200,23 +1224,26 @@ const Services = () => {
               </div>
             </div>
             <img // eslint-disable-line
-              className="lg:w-1/2 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+              className="lg:w-1/2 w-full h-96 xl:h-full object-cover object-center rounded-lg md:mt-0 my-6"
               src="/service8.jpeg"
               alt="step"
             />
           </div>
         </div>
-        <div className="container pb-24 mx-auto flex flex-wrap" id="service-9">
+        <div
+          className="container pb-12 lg:pb-24 mx-auto flex flex-wrap"
+          id="service-9"
+        >
           <h1 className="text-3xl my-4 font-serif">
             Laser Eye Surgery Consultations
           </h1>
-          <div className="flex flex-wrap w-full">
+          <div className="flex flex-col lg:flex-row flex-wrap w-full">
             <img // eslint-disable-line
-              className="lg:w-1/2 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+              className="lg:w-1/2 w-full h-96 xl:h-full object-cover object-center rounded-lg md:mt-0 my-6"
               src="/service9.jpeg"
               alt="step"
             />
-            <div className="lg:w-1/2 md:w-1/2 md:pl-10 md:py-6">
+            <div className="lg:w-1/2 w-full lg:pl-10 py-6">
               <div className="flex relative pb-12">
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>

@@ -2,6 +2,7 @@ import React from "react";
 import ContentC from "../components/ContentC";
 import Footer from "../components/Footer";
 import Expectations from "../components/Expectations";
+import Link from "next/link";
 
 const Resources = () => {
   return (
@@ -29,9 +30,11 @@ const Resources = () => {
             preserving vision. Early intervention and consistent management are
             essential to maintaining eye health and preventing vision loss.
           </p>
-          <button className="inline-flex items-center bg-blue-900 text-white border-2 border-blue-900 p-2 focus:outline-none px-4 rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent hover:text-blue-900">
-            Read More
-          </button>
+          <Link href={"https://en.wikipedia.org/wiki/Glaucoma"} target="_blank">
+            <button className="inline-flex items-center bg-blue-900 text-white border-2 border-blue-900 p-2 focus:outline-none px-4 rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent hover:text-blue-900">
+              Read More
+            </button>
+          </Link>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img //eslint-disable-line
@@ -67,9 +70,11 @@ const Resources = () => {
             timely evaluation and treatment to regain clear vision and improve
             your quality of life.
           </p>
-          <button className="inline-flex items-center bg-blue-900 text-white border-2 border-blue-900 p-2 focus:outline-none px-4 rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent hover:text-blue-900">
-            Read More
-          </button>
+          <Link href={"https://en.wikipedia.org/wiki/Cataract"} target="_blank">
+            <button className="inline-flex items-center bg-blue-900 text-white border-2 border-blue-900 p-2 focus:outline-none px-4 rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent hover:text-blue-900">
+              Read More
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -94,9 +99,14 @@ const Resources = () => {
             examinations to monitor for diabetic retinopathy and other related
             eye conditions.
           </p>
-          <button className="inline-flex items-center bg-blue-900 text-white border-2 border-blue-900 p-2 focus:outline-none px-4 rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent hover:text-blue-900">
-            Read More
-          </button>
+          <Link
+            href={"https://en.wikipedia.org/wiki/Diabetic_retinopathy"}
+            target="_blank"
+          >
+            <button className="inline-flex items-center bg-blue-900 text-white border-2 border-blue-900 p-2 focus:outline-none px-4 rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent hover:text-blue-900">
+              Read More
+            </button>
+          </Link>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img //eslint-disable-line
@@ -135,9 +145,14 @@ const Resources = () => {
             appropriate management of refractive errors to ensure optimal vision
             and eye health.
           </p>
-          <button className="inline-flex items-center bg-blue-900 text-white border-2 border-blue-900 p-2 focus:outline-none px-4 rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent hover:text-blue-900">
-            Read More
-          </button>
+          <Link
+            href={"https://en.wikipedia.org/wiki/Refractive_error"}
+            target="_blank"
+          >
+            <button className="inline-flex items-center bg-blue-900 text-white border-2 border-blue-900 p-2 focus:outline-none px-4 rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent hover:text-blue-900">
+              Read More
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -164,9 +179,14 @@ const Resources = () => {
             implementing appropriate treatment strategies to maintain eye health
             and quality of life.
           </p>
-          <button className="inline-flex items-center bg-blue-900 text-white border-2 border-blue-900 p-2 focus:outline-none px-4 rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent hover:text-blue-900">
-            Read More
-          </button>
+          <Link
+            href={"https://en.wikipedia.org/wiki/Macular_degeneration"}
+            target="_blank"
+          >
+            <button className="inline-flex items-center bg-blue-900 text-white border-2 border-blue-900 p-2 focus:outline-none px-4 rounded mt-4 md:mt-0 font-thin text-lg hover:bg-transparent hover:text-blue-900">
+              Read More
+            </button>
+          </Link>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img //eslint-disable-line
