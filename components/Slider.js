@@ -83,7 +83,7 @@ const Slider = () => {
     },
     {
       heading: "Are there specialized eye doctors for children?",
-      text: "Yes, there are specialized eye doctors known as pediatric optometrists or pediatric ophthalmologists who focus on providing eye care for infants, children, and adolescents. These specialists have expertise in assessing and managing various pediatric eye conditions and vision problems, such as amblyopia (lazy eye), strabismus (crossed eyes), refractive errors, and eye alignment issues. Pediatric eye doctors use specialized techniques and equipment to examine children's eyes and ensure optimal visual development and eye health from infancy through adolescence. If you have concerns about your child's vision or eye health, consulting a pediatric eye doctor is recommended for specialized care tailored to their unique needs.",
+      text: "Yes, there are specialized eye doctors known as pediatric optometrists or pediatric ophthalmologists who focus on providing eye care for infants, children, and adolescents. These specialists have expertise in assessing and managing various pediatric eye conditions and vision problems, such as amblyopia (lazy eye), strabismus (crossed eyes), refractive errors, and eye alignment issues. Pediatric eye doctors use specialized techniques and equipment to examine children's eyes and ensure optimal visual development and eye health from infancy through adolescence.",
     },
   ];
 
@@ -92,7 +92,7 @@ const Slider = () => {
       <h1 className="text-4xl font-serif text-center my-5">
         Frequently Asked Questions
       </h1>
-      <p className="font-style text-center px-16">
+      <p className="font-style text-left px-4 md:px-8 lg:px-16">
         Dive into clarity! Learn all about the world of eye care with our
         expertly curated answers to your burning questions. From understanding
         the role of eye doctors to demystifying the eye exam process, we have
@@ -103,15 +103,19 @@ const Slider = () => {
         <button className="btn-arrow" id="prev" onClick={handlePrev}>
           <MdOutlineKeyboardArrowLeft className="text-2xl" />
         </button>
-        <div className="items h-72 my-20 mx-3">
+        <div className="items md:h-96 lg:h-72 my-20 mx-3">
           {slides.map((slide, index) => (
             <div
               key={index}
               ref={(el) => (itemsRef.current[index] = el)}
               className={`item ${index === active ? "active" : ""}`}
             >
-              <h2 className="text-3xl font-serif my-5">{slide.heading}</h2>
-              <p className="font-style w-10/12 mx-auto">{slide.text}</p>
+              <h2 className="text-2xl md:text-3xl font-serif my-5 px-5">
+                {slide.heading}
+              </h2>
+              <p className="font-style w-10/12 mx-auto text-left">
+                {slide.text}
+              </p>
             </div>
           ))}
         </div>

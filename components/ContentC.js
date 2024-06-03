@@ -192,6 +192,7 @@
 // };
 
 // export default ContentC;
+
 import React, { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import Slider from "react-slick";
@@ -202,7 +203,7 @@ const ContentC = () => {
   const [backgroundImage, setBackgroundImage] = useState("/NormalVision.webp");
   const [heading, setHeading] = useState("This is Normal Eye Vision");
   const [text, setText] = useState(
-    "Normal eye vision allows you to see the world clearly and comfortably without the need for corrective lenses.With normal vision, you can enjoy everyday activities with ease and confidence."
+    "Normal eye vision allows you to see the world clearly and comfortably without the need for corrective lenses. With normal vision, you can enjoy everyday activities with ease and confidence."
   );
   const [isMobile, setIsMobile] = useState(false);
 
@@ -210,7 +211,7 @@ const ContentC = () => {
     {
       src: "/Glaucoma.png",
       heading: "Glaucoma",
-      text: "Glaucoma is a serious eye condition that can lead to vision loss if not detected early. It occurs when increased pressure in the eye damages the optic nerve. ",
+      text: "Glaucoma is a serious eye condition that can lead to vision loss if not detected early. It occurs when increased pressure in the eye damages the optic nerve.",
     },
     {
       src: "/Cataracts.png",
@@ -225,7 +226,7 @@ const ContentC = () => {
     {
       src: "/RefractiveError.png",
       heading: "Refractive Error",
-      text: "Refractive errors are common vision problems that occur when the shape of your eye prevents light from focusing correctly on the retina. This can result in blurred vision for objects near, far, or both. ",
+      text: "Refractive errors are common vision problems that occur when the shape of your eye prevents light from focusing correctly on the retina. This can result in blurred vision for objects near, far, or both.",
     },
     {
       src: "/MacularDegeneration.png",
@@ -263,7 +264,7 @@ const ContentC = () => {
   };
 
   return (
-    <div>
+    <div style={{ overflowX: "hidden" }}>
       <section
         className="content__section__img mb-16"
         style={{
@@ -272,7 +273,7 @@ const ContentC = () => {
         }}
       >
         <Row className="w-full my-36 relative -top-48">
-          <section className="text-gray-600 body-font">
+          <section className="text-gray-600 body-font w-full">
             <div className="px-5 py-24 mx-auto">
               <div className="flex flex-wrap -m-4">
                 {images.map((image, index) => (
@@ -280,10 +281,10 @@ const ContentC = () => {
                     key={index}
                     className="p-4 md:w-1/5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200"
                   >
-                    <img //eslint-disable-line
+                    <img
                       className="lg:h-56 md:h-36 w-full object-cover object-center"
                       src={image.src}
-                      alt="blog"
+                      alt={image.heading}
                       onMouseEnter={() =>
                         handleMouseOver(image.src, image.heading, image.text)
                       }
@@ -291,7 +292,7 @@ const ContentC = () => {
                         handleMouseOver(
                           "/NormalVision.webp",
                           "This is Normal Eye Vision",
-                          "Normal eye vision allows you to see the world clearly and comfortably without the need for corrective lenses.With normal vision, you can enjoy everyday activities with ease and confidence."
+                          "Normal eye vision allows you to see the world clearly and comfortably without the need for corrective lenses. With normal vision, you can enjoy everyday activities with ease and confidence."
                         )
                       }
                     />
@@ -323,10 +324,10 @@ const ContentC = () => {
           <Slider {...settings}>
             {images.map((image, index) => (
               <div key={index}>
-                <img //eslint-disable-line
+                <img
                   className="h-96 w-full object-cover object-center"
                   src={image.src}
-                  alt="blog"
+                  alt={image.heading}
                 />
                 <h2 className="text-black text-3xl text-center font-serif">
                   {image.heading}

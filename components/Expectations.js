@@ -4,16 +4,16 @@ import Link from "next/link";
 const Expectations = () => {
   return (
     <section className="text-white body-font bg-gray-50">
-      <div className="container px-5 py-16 mx-auto">
+      <div className="px-5 py-16 mx-auto">
         <div className="container mx-auto flex flex-wrap" id="service-1">
-          <div className="flex flex-wrap w-full">
+          <div className="w-full flex flex-wrap">
             <img // eslint-disable-line
-              className="lg:w-1/2 md:w-1/2 object-cover object-center rounded-lg md:mt-0 py-10"
+              className="w-full lg:w-1/2 object-cover object-center rounded-lg md:mt-0 py-10 h-96 lg:h-full"
               src="/expect.jpeg"
               alt="step"
             />
             <div className="lg:w-1/2 sm:mx-auto sm:mb-2 -mx-2">
-              <div className="p-2 w-full px-16">
+              <div className="p-2 w-full xl:px-16 md:px-8  px-0">
                 <div className="bg-blue-900 rounded flex p-4 h-full items-center">
                   <svg
                     fill="none"
@@ -33,7 +33,7 @@ const Expectations = () => {
                   </span>
                 </div>
               </div>
-              <div className="p-2 w-full px-16">
+              <div className="p-2 w-full xl:px-16 md:px-8  px-0">
                 <div className="bg-blue-900 rounded flex p-4 h-full items-center">
                   <svg
                     fill="none"
@@ -53,7 +53,7 @@ const Expectations = () => {
                   </span>
                 </div>
               </div>
-              <div className="p-2 w-full px-16">
+              <div className="p-2 w-full xl:px-16 md:px-8  px-0">
                 <div className="bg-blue-900 rounded flex p-4 h-full items-center">
                   <svg
                     fill="none"
@@ -73,7 +73,7 @@ const Expectations = () => {
                   </span>
                 </div>
               </div>
-              <div className="p-2 w-full px-16">
+              <div className="p-2 w-full xl:px-16 md:px-8  px-0">
                 <div className="bg-blue-900 rounded flex p-4 h-full items-center">
                   <svg
                     fill="none"
@@ -93,7 +93,7 @@ const Expectations = () => {
                   </span>
                 </div>
               </div>
-              <div className="p-2 w-full px-16">
+              <div className="p-2 w-full xl:px-16 md:px-8  px-0">
                 <div className="bg-blue-900 rounded flex p-4 h-full items-center">
                   <svg
                     fill="none"
