@@ -6,12 +6,12 @@ import Expectations from "../components/Expectations";
 const Exam = () => {
   return (
     <section className="text-gray-600 body-font">
-      <h1 className=" container mx-auto title-font font-medium text-3xl py-5 text-black font-serif mt-10 text-start border-b-2 border-y-gray-300">
+      <h1 className=" container mx-auto title-font font-medium text-3xl py-5 text-black font-serif mt-10 text-start border-b-2 border-y-gray-300 pl-4 md:pl-0">
         EYE EXAM
       </h1>
 
-      <div className=" container mx-auto flex px-16 py-16 md:flex-row flex-col  bg-gray-50">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-8 md:mb-0 items-center text-center">
+      <div className="container mx-auto flex px-4 lg:px-16 py-16 lg:flex-row flex-col  bg-gray-50">
+        <div className="lg:flex-grow w-full lg:w-1/2 lg:pr-16 flex flex-col md:items-start text-left mb-8 md:mb-0 items-center">
           <p className="mb-8 leading-relaxed font-style">
             We are dedicated to providing exceptional eye care through
             comprehensive eye exams, advanced technology, and a patient-centered
@@ -25,7 +25,7 @@ const Exam = () => {
             care needs and experience the highest standard of care for your
             vision. Book your eye exam online today!
           </p>
-          <ul className="font-style py-5 list-disc list-outside">
+          <ul className="font-style py-5 list-disc list-inside lg:list-outside">
             <li className="my-2">
               <span className="text-black"> Visual Acuity Test: </span>Assessing
               how well you see at various distances.
@@ -53,7 +53,7 @@ const Exam = () => {
             Book Your Eye Test Now
           </button> */}
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <div className="w-full lg:w-1/2">
           <img //eslint-disable-line
             className="object-cover object-center rounded"
             alt="hero"
@@ -62,12 +62,12 @@ const Exam = () => {
         </div>
       </div>
       <h1
-        className=" container mx-auto title-font font-medium text-3xl py-5 text-black font-serif mt-10 text-start border-b-2 border-y-gray-300"
+        className=" container mx-auto title-font font-medium text-3xl py-5 text-black font-serif mt-10 text-start border-b-2 border-y-gray-300 px-4 lg:px-0"
         id="book-appointment"
       >
         BOOK YOUR EYE EXAM BELOW
       </h1>
-      <p className="container mx-auto my-5 font-style">
+      <p className="container mx-auto my-5 font-style px-4 lg:px-0">
         To request your eye exam, please take a moment to complete the short
         form below with your personal details and your preferred location for
         the appointment. This information will help us ensure that we provide

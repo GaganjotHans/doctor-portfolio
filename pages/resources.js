@@ -12,12 +12,12 @@ const Resources = () => {
       </h1>
       <ContentC />
 
-      <div className="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-8 md:mb-0 items-center text-center">
+      <div className="container mx-auto flex px-5 py-4 lg:py-8 lg:flex-row flex-col items-start">
+        <div className="lg:flex-grow w-full lg:w-1/2 lg:pr-24 flex flex-col text-left lg:mb-8 mb-0 items-start">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 font-serif">
             Glaucoma
           </h1>
-          <p className="mb-8 leading-relaxed font-style">
+          <p className="mb-2 lg:mb-8 leading-relaxed font-style">
             Glaucoma is a progressive eye disease that damages the optic nerve,
             often caused by increased intraocular pressure, and is a leading
             cause of irreversible blindness. It typically develops slowly and
@@ -38,26 +38,26 @@ const Resources = () => {
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img //eslint-disable-line
-            className="object-cover object-center rounded"
+            className="object-cover object-center rounded hidden lg:inline-flex"
             alt="hero"
             src="/Glaucoma.png"
           />
         </div>
       </div>
 
-      <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
+      <div className="container mx-auto flex px-5 py-4 lg:py-8 lg:flex-row flex-col items-start">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img //eslint-disable-line
-            className="object-cover object-center rounded"
+            className="object-cover object-center rounded hidden lg:inline-flex"
             alt="hero"
             src="/Cataracts.png"
           />
         </div>
-        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left mb-8 md:mb-0 items-center text-center">
+        <div className="lg:flex-grow w-full lg:w-1/2 lg:pl-24 flex flex-col md:items-start md:text-left lg:mb-8 mb-0 items-start">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 font-serif">
             Cataracts
           </h1>
-          <p className="mb-8 leading-relaxed font-style">
+          <p className="mb-2 lg:mb-8 leading-relaxed font-style">
             Cataracts, a prevalent age-related condition, occur when the eyes
             natural lens becomes clouded, leading to blurred vision and visual
             impairment. Symptoms include blurry vision, increased sensitivity to
@@ -78,12 +78,12 @@ const Resources = () => {
         </div>
       </div>
 
-      <div className="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-8 md:mb-0 items-center text-center">
+      <div className="container mx-auto flex px-5 py-4 lg:py-8 lg:flex-row flex-col items-start">
+        <div className="lg:flex-grow lg:w-1/2 lg:pr-24 flex flex-col text-left mb-8 md:mb-0 items-start">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 font-serif">
             Diabetic Retinopathy
           </h1>
-          <p className="mb-8 leading-relaxed font-style">
+          <p className="mb-2 lg:mb-8 leading-relaxed font-style">
             Diabetic retinopathy is a serious complication of diabetes that
             affects the eyes, leading to damage to the blood vessels in the
             retina. Over time, high blood sugar levels can weaken and damage
@@ -110,26 +110,26 @@ const Resources = () => {
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img //eslint-disable-line
-            className="object-cover object-center rounded"
+            className="object-cover object-center rounded hidden lg:inline-flex"
             alt="hero"
             src="/DiabeticRetinopathy.png"
           />
         </div>
       </div>
 
-      <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
+      <div className="container mx-auto flex px-5 py-4 lg:py-8 lg:flex-row flex-col items-start">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img //eslint-disable-line
-            className="object-cover object-center rounded"
+            className="object-cover object-center rounded hidden lg:inline-flex"
             alt="hero"
             src="/RefractiveError.png"
           />
         </div>
-        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left mb-8 md:mb-0 items-center text-center">
+        <div className="lg:flex-grow lg:w-1/2 lg:pl-24 flex flex-col items-start text-left mb-8 md:mb-0">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 font-serif">
             Refractive Error
           </h1>
-          <p className="mb-8 leading-relaxed font-style">
+          <p className="mb-2 lg:mb-8 leading-relaxed font-style">
             Refractive error refers to an imperfection in the eyes ability to
             properly focus light, leading to blurred vision. Common types
             include nearsightedness (myopia), farsightedness (hyperopia), and
@@ -156,12 +156,12 @@ const Resources = () => {
         </div>
       </div>
 
-      <div className="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-8 md:mb-0 items-center text-center">
+      <div className="container mx-auto flex px-5 py-4 lg:py-8 lg:flex-row flex-col items-start">
+        <div className="lg:flex-grow lg:w-1/2 lg:pr-24 flex flex-col items-start text-left mb-8 md:mb-0">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 font-serif">
             Age-Related Macular Degeneration
           </h1>
-          <p className="mb-8 leading-relaxed font-style">
+          <p className="mb-2 lg:mb-8 leading-relaxed font-style">
             Age-related macular degeneration (AMD) is a progressive eye
             condition that affects the macula, the central part of the retina
             responsible for sharp, central vision. As its name suggests, AMD
@@ -190,7 +190,7 @@ const Resources = () => {
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img //eslint-disable-line
-            className="object-cover object-center rounded"
+            className="object-cover object-center rounded hidden lg:inline-flex"
             alt="hero"
             src="/MacularDegeneration.png"
           />

@@ -123,7 +123,7 @@ const Careers = () => {
             learning and real-world application
           </div>
         </div>
-        <div className="lg:w-2/5 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 font-style">
+        <div className="lg:w-2/5 md:w-1/2 bg-gray-100 rounded-lg p-4 md:p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 font-style">
           <div className="relative mb-4">
             <label
               htmlFor="firstName"

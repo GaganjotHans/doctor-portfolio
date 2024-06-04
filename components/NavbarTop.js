@@ -53,9 +53,9 @@ const NavbarTop = () => {
           href={"/"}
         >
           <img // eslint-disable-line
-            src="/DrLogo.png"
+            src="/DrLogo2.png"
             alt="Logo of the author's Name"
-            className="w-64 mt-1 lg:mt-0 h-20"
+            className="w-64 lg:w-72 mt-1 lg:mt-0 h-20"
           />
         </Link>
         <nav className="md:ml-auto md:mr-auto hidden lg:flex">
