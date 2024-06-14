@@ -352,6 +352,10 @@ body {
   font-weight: 500;
 }
 
+.btn:disabled {
+  cursor: not-allowed;
+}
+
 .wrapper .icon-close {
   position: absolute;
   top: 0;
@@ -429,6 +433,10 @@ body {
   .banner img {
     width: 100vw;
   }
+  .wrapper {
+    width: 350px;
+  }
+
   .items {
     height: 680px;
   }

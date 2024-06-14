@@ -135,9 +135,9 @@ export default async function handler(
   }
 
   try {
-    const { firstName, lastName, email, phone, message, patientType } = req.body;
+    const { firstName, lastName, email, phone, message } = req.body;
 
-    if (!firstName || !lastName || !email || !phone || !patientType) {
+    if (!firstName || !lastName || !email || !phone) {
       return res.status(400).json({ status: "Error", message: "Missing required fields" });
     }
 
@@ -158,7 +158,6 @@ export default async function handler(
       html: `<p>Name: ${firstName} ${lastName}</p>
              <p>Email: ${email}</p>
              <p>Phone: ${phone}</p>
-             <p>Patient Type: ${patientType}</p>
              <p>Message: ${message}</p>`,
     };
 
