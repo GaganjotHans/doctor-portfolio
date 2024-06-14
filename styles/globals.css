@@ -226,6 +226,16 @@ body {
   font-size: 18px;
 }
 
+.text-transition {
+  color: black;
+  transition: color 0.3s ease;
+}
+.text-transition:hover {
+  color: gray;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .nav-link:hover {
   color: gray;
   text-decoration: underline;

@@ -6,7 +6,7 @@ import { FaArrowDown } from "react-icons/fa";
 import Link from "next/link";
 import ContactForm from "../components/ContactForm";
 
-const StCatharinesLocation = () => {
+const BuffaloLocation = () => {
   const [showContactForm, setShowContactForm] = useState(false);
 
   const toggleContactForm = () => {
@@ -33,7 +33,7 @@ const StCatharinesLocation = () => {
                 eye care in the heart of the Niagara region.`}
               </p>
               <h2 className="text-3xl font-medium text-gray-900 title-font mb-2 font-serif">
-                Custom Lens Xpress - St. Catharines
+                {"America's Best Contacts & Eyeglasses - Buffalo"}
               </h2>
 
               <div className="contactDetails w-full">
@@ -59,7 +59,7 @@ const StCatharinesLocation = () => {
                   Address
                 </div>
                 <div className="mt-6 font-mono">
-                  100 Fourth Ave, St. Catharines, ON L2S 3P2
+                  2143 Delaware Ave, Buffalo, NY 14216, United States
                 </div>
               </div>
 
@@ -74,7 +74,7 @@ const StCatharinesLocation = () => {
                     height="100%"
                     className="absolute inset-0"
                     title="map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2910.5829595468813!2d-79.2631614!3d43.155286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d351beae4dab15%3A0x508c81c51bf6f7d!2sCustom%20Lens%20Xpress!5e0!3m2!1sen!2sca!4v1718387729797!5m2!1sen!2sca"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d185915.80062686713!2d-79.11707100766269!3d42.9840252273529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d36d9cc1536505%3A0x87e9908b8369c7a!2sAmerica&#39;s%20Best%20Contacts%20%26%20Eyeglasses!5e0!3m2!1sen!2sca!4v1718387120730!5m2!1sen!2sca"
                   ></iframe>
                 </div>
               </div>
@@ -150,10 +150,9 @@ const StCatharinesLocation = () => {
             </div>
 
             <div className="mb-6 flex-shrink-0 flex flex-col">
-              <Link href={"/buffalo-location"}>
-                {" "}
+              <Link href={"/oakville-location"}>
                 <h2 className="text-2xl font-medium text-gray-900 title-font mb-2 font-serif text-transition">
-                  {"America's Best Contacts & Eyeglasses - Buffalo"}
+                  {"LensCrafters - Oakville"}
                 </h2>
               </Link>
               <div className="contactDetails text-sm">
@@ -173,9 +172,9 @@ const StCatharinesLocation = () => {
             </div>
 
             <div className="mb-6 flex-shrink-0 flex flex-col">
-              <Link href={"/oakville-location"}>
+              <Link href={"/st-catharines-location"}>
                 <h2 className="text-2xl font-medium text-gray-900 title-font mb-2 font-serif text-transition">
-                  {"LensCrafters - Oakville"}
+                  {"Custom Lens Xpress - St. Catharines"}
                 </h2>
               </Link>
               <div className="contactDetails text-sm">
@@ -245,4 +244,4 @@ const StCatharinesLocation = () => {
   );
 };
 
-export default StCatharinesLocation;
+export default BuffaloLocation;

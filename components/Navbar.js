@@ -134,16 +134,16 @@ const Navbar = () => {
               <Link href="/st-catharines-location" onClick={toggleMenu}>
                 St. Catharines, ON
               </Link>
-              <Link href="#" onClick={toggleMenu}>
+              <Link href="/burlington-location" onClick={toggleMenu}>
                 Burlington, ON
               </Link>
-              <Link href="#" onClick={toggleMenu}>
+              <Link href="/toronto-location" onClick={toggleMenu}>
                 Toronto, ON
               </Link>
-              <Link href="#" onClick={toggleMenu}>
+              <Link href="/oakville-location" onClick={toggleMenu}>
                 Oakville, ON
               </Link>
-              <Link href="#" onClick={toggleMenu}>
+              <Link href="/buffalo-location" onClick={toggleMenu}>
                 Buffalo, NY
               </Link>
             </div>
