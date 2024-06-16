@@ -4,6 +4,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Expectations from "../components/Expectations";
+
 import { IoIosContact, IoMdContact } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
@@ -68,15 +69,15 @@ const Careers = () => {
 
   return (
     <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto flex flex-wrap justify-center">
-        <div className="lg:w-2/5 md:w-1/2 shadow-xl">
+      <div className="px-5 py-24 mx-auto flex flex-wrap justify-center bg-img">
+        <div className="lg:w-1/3 md:w-1/2 shadow-xl">
           <img // eslint-disable-line
             className="w-full h-full object-cover object-center rounded-l-lg"
             src="/careers.jpeg"
             alt="blog"
           />
         </div>
-        <div className="lg:w-2/5 md:w-1/2 bg-gray-100 rounded-r-lg p-4 md:p-8 flex flex-col w-full mt-10 md:mt-0 font-style shadow-xl">
+        <div className="lg:w-1/3 md:w-1/2 bg-gray-100 rounded-r-lg p-4 md:p-8 flex flex-col w-full mt-10 md:mt-0 font-style shadow-xl">
           <div className="form-box contact-form">
             <div>
               <div className="input-box">

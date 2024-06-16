@@ -66,9 +66,9 @@ const NavbarTop = () => {
             </div>
           </div>
         </nav>
-        <Link href={"/exam#book-appointment"}>
+        <Link href={"/product"}>
           <button className="inline-block w-screen md:w-fit md:inline-flex items-center bg-blue-900 text-white border-2 border-blue-900 p-2 focus:outline-none  md:rounded md:mt-0 font-thin text-lg hover:bg-transparent hover:text-blue-900">
-            Book Appointment
+            Shop Online
             <AiFillSchedule className="ml-2 text-3xl hidden md:inline-block" />
           </button>
         </Link>
