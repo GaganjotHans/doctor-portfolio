@@ -10,7 +10,7 @@ const products = [
     description:
       "An innovative and simple to use bottle to relieve dryness and irritation of eyes and eyelids.",
     imageUrl:
-      "https://optase.com/wp-content/uploads/2022/03/Optase-Intense-Dry-Eye-Drops.png",
+      "https://optase.com/wp-content/uploads/2022/03/OPTASE-Digital-Dry-Eye-Spray-Box-Bottle-scaled.jpg",
     buttonText: "Buy Now",
   },
   {
@@ -28,7 +28,7 @@ const products = [
     description:
       "Eye Lubricant provides relief and protection from moderate to severe Dry Eye symptoms.",
     imageUrl:
-      "https://optase.com/wp-content/uploads/2022/03/Optase-Intense-Dry-Eye-Drops.png",
+      "https://optase.com/wp-content/uploads/2022/03/OPTASE-Protect-USA-box-and-bottle-2021.png",
     buttonText: "Buy Now",
   },
   {
@@ -37,7 +37,7 @@ const products = [
     description:
       "Eye Lubricant provides relief and protection from moderate to severe Dry Eye symptoms.",
     imageUrl:
-      "https://optase.com/wp-content/uploads/2022/03/Optase-Intense-Dry-Eye-Drops.png",
+      "https://optase.com/wp-content/uploads/2022/04/optase-tea-tree-oil-gel.png",
     buttonText: "Buy Now",
   },
   {
@@ -46,7 +46,7 @@ const products = [
     description:
       "Eye Lubricant provides relief and protection from moderate to severe Dry Eye symptoms.",
     imageUrl:
-      "https://optase.com/wp-content/uploads/2022/03/Optase-Intense-Dry-Eye-Drops.png",
+      "https://optase.com/wp-content/uploads/2022/04/Optase-Moist-Heat-Mask-1.png",
     buttonText: "Buy Now",
   },
   // Add more product objects up to 10
@@ -80,7 +80,7 @@ const ProductSlider = () => {
   };
 
   return (
-    <section>
+    <section className="my-16">
       <h1 className="container mx-auto title-font font-medium text-4xl py-5 text-black font-serif mt-10 text-start border-b-2 border-y-blue-900 pl-4 lg:pl-0">
         Our Bestsellers
       </h1>

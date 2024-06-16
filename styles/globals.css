@@ -636,6 +636,7 @@ body {
   border: 1px solid #ddd;
   text-align: left;
   max-height: 800px;
+  margin-bottom: 50px;
 }
 
 .product-card img {
